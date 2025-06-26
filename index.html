@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário Completo</title>
+</head>
+<body>
+
+<!-- Formulário -->
+<form id="meuform">
+
+  <!-- Campo de texto -->
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+  <!-- Campo de email -->
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+  <!-- Campo de radio -->
+  <label>Gênero:</label>
+  <div class="inline">
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label>
+  </div>
+
+  <!-- Campo de checkbox -->
+  <label>Interesses:</label>
+  <div class="inline">
+    <input type="checkbox" id="html" name="interesse" value="HTML">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="interesse" value="CSS">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js" name="interesse" value="JavaScript">
+    <label for="js">JavaScript</label>
+  </div>
+
+  <!-- Campo de data -->
+  <label for="data-nascimento">Data de nascimento:</label>
+  <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+  <!-- Select -->
+  <label for="estado">Estado:</label>
+  <select id="estado" name="estado">
+    <option value="">Selecione</option>
+    <option value="sp">São Paulo</option>
+    <option value="rj">Rio de Janeiro</option>
+    <option value="mg">Minas Gerais</option>
+    <option value="rs">Rio Grande do Sul</option>
+  </select>
+
+  <!-- Textarea -->
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..."></textarea>
+
+   <!-- Figura com legenda -->
+  <figure>
+    <img src="./Baby-Yoda-Transparent-PNG.png" alt="Baby Yoda" width="450">
+    <figcaption id="texto">- Escrever tudo certinho eu vou...</figcaption>
+  </figure>
+
+ <!-- Botão de envio -->
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- jQuery para os eventos -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./jquery.js"></script>
+</body>
+</html>
