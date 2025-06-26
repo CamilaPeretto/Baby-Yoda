@@ -36,4 +36,9 @@ $(document).ready(function() {
     $("#texto").dblclick(function() {
       $(this).slideToggle();
     });
+
+    window.addEventListener('load', () => {
+      document.body.style.backgroundImage = "url('https://wallpaperaccess.com/full/6942998.jpg')";
+    });
+
   });
